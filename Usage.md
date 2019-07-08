@@ -1,5 +1,8 @@
 # Usage Doc
 
+- For `ibc` only, use `alt` + left click `connection` to launch hidden logon page.
+  Specify username `ibc` and password. Please use `ibc` for username now.
+
 - Use the account `ibc` to login
 
 - In the page `Files`, check the top-right corner, click the `New Company` button to create a new client. Besides, the company'd receive an email asking him/her to click an link provided by Amazon Cognito to activate his/her account.
