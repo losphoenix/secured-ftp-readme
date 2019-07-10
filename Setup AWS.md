@@ -95,7 +95,7 @@ then click `Save app client changes`. The `App client secret` should show `no se
 
 ## 4. Update Config
 
-1. Update `resources/app/assets/cfg/config.json`
+1. Update `{HOME}/secure-share/conf/config.json`
 
 ```
 {
