@@ -17,3 +17,18 @@
 ![generate-credential.png](asset/generate-credential.png)
 
 - User can import RSA key pairs in `Credential` page. To make it, users need to be sure the desired RSA key pairs are already in his/her computer.
+
+## How to reset a company user
+
+Say the username for this company user is `abc`,
+
+- **In IBC's computer**
+  1. Remove the following directories:
+    - `${HOME}/secure-share/meta/abc`
+    - `${HOME}/secure-share/data/abc`
+  2. Remove the following files:
+    - `${HOME}/secure-share/meta/ibc/ibc-abc-public.txt`
+    - `${HOME}/secure-share/meta/ibc/ibc-abc-private.txt`
+  3. Open S3 console, delete folder `abc` in your bucket
+  4. Open Cognito console, delete user `abc`
+- **In client's computer**, just remove the whole folder `${HOME}/secure-share`
