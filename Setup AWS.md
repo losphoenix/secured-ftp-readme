@@ -1,8 +1,7 @@
 # Setup AWS
 
 ## 1 Cognito
-
-> We use cognito to manage user authorization and access permission to S3
+> manage user authorization and access permission to S3
 
 1. Find `Cognito` in AWS service and click `Manage User Pools`
 
@@ -19,8 +18,6 @@ then click `Save app client changes`. The `App client secret` should show `no se
 
 6. Create an IAM role for the Identity Pool.
 ![edit-idenrity-pool.png](asset/edit-idenrity-pool.png)
-
-
 
 ## 2 S3
 
@@ -70,7 +67,6 @@ then click `Save app client changes`. The `App client secret` should show `no se
 }
 ```
 
-
 ## 3 IAM
 
 1. Open IAM console
@@ -91,11 +87,9 @@ then click `Save app client changes`. The `App client secret` should show `no se
 
 ![edit-iam-ibc-root-user.png](asset/edit-iam-ibc-root-user.png)
 
-
-
 ## 4. Update Config
 
-1. Update `{HOME}/secure-share/conf/config.json`
+1. Update `%USERPROFILE%/secure-share/conf/config.json`
 
 ```
 {
