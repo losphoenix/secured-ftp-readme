@@ -4,7 +4,7 @@ Secured-Share is a secure end-to-end file sharing App based on Amazon AWS tech s
 
 # 1 Requirement
 
-- Windows 10 OS/ Windows Server 2016/ Linux CentOS 7
+- Windows 10 OS/ Windows Server 2016
 - Make sure local port 18080 is available (This port is for local use only)
 - Make sure the backup machine has the same domain name. Check the domain name in cmd prompt by running ```systeminfo | findstr /B /C:"Domain"``` (Only for windows, except for Linux)
 
@@ -25,15 +25,9 @@ Note:
 
 ### 3.0 Windows Setup
 
-- Install NodeJS and dependencies. Open a command prompt(cmd). Run ```{SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\cfg\node-install.bat```
+- Install NodeJS and dependencies. Open a command prompt(cmd).  ```cd {SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\cfg\``` Run ```node-install.bat```
 - In a command prompt(cmd), type `node -v` to check the install version of nodeJS. You will see `v10.16.0`
 - Run secure-share.exe to launch app.
-
-### 3.1 Linux Setup
-
-- Find NodeJS install package ```{SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\cfg\node-v10.16.0-linux-x64.tar.xz```
-- Install NodeJS by the steps in https://github.com/nodejs/help/wiki/Installation
-- Run `npm install -g node-windows express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird`
 
 
 # 4 User Manual
