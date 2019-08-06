@@ -29,6 +29,17 @@ Note:
 - In a command prompt(cmd), type `node -v` to check the install version of nodeJS. You will see `v10.16.0`
 - Run secure-share.exe to launch app.
 
+### 3.1 Linux Setup
+####Environment Setup
+- Install Linux dependency ```yum install libXScrnSaver```
+- ```sudo chown root:$USER {SECURE_SHARE_ROOT_PATH}/chrome-sandbox```
+  ```sudo chmod 4755 {SECURE_SHARE_ROOT_PATH}/chrome-sandbox```
+
+- Find NodeJS install package ```{SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\cfg\node-v10.16.0-linux-x64.tar.xz```
+- Unzip the zip file and follow the instructions to install NodeJS in https://github.com/nodejs/help/wiki/Installation
+####Initialize for New Build
+- In a terminal, run `npm install express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird`
+- Run ```./secure-share``` to launch app
 
 # 4 User Manual
 
