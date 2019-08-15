@@ -29,6 +29,12 @@ Note:
 - In a command prompt(cmd), type `node -v` to check the install version of nodeJS. You will see `v10.16.0`
 - Run secure-share.exe to launch app.
 
+#### Windows Troubleshooting
+- If you cannot open the app. Open a command prompt(cmd).
+    - ```cd {SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\js\```
+    - ```node SecureShareService.js```
+    - If it shows some error like "cannot find module XXX", then run ```npm install node-windows express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird```
+
 ### 3.1 Linux Setup
 ####Environment Setup
 - Install Linux dependency ```yum install libXScrnSaver```
