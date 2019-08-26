@@ -33,7 +33,7 @@ Note:
 - If you cannot open the app. Open a command prompt(cmd).
     - ```cd {SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\js\```
     - ```node SecureShareService.js```
-    - If it shows some error like "cannot find module XXX", then run ```npm install node-windows express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird```
+    - If it shows some error like "cannot find module XXX", then run ```npm install node-windows express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird forever-monitor forever```
 
 ### 3.1 Linux Setup
 ####Environment Setup
@@ -44,7 +44,7 @@ Note:
 - Find NodeJS install package ```{SECURE_SHARE_ROOT_PATH}\secure-share\resources\app\assets\cfg\node-v10.16.0-linux-x64.tar.xz```
 - Unzip the zip file and follow the instructions to install NodeJS in https://github.com/nodejs/help/wiki/Installation
 ####Initialize for New Build
-- In a terminal, run `npm install express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird`
+- In a terminal, run `npm install express body-parser aes256 node-rsa fast-sha256 aws-sdk amazon-cognito-identity-js node-fetch bluebird forever-monitor forever`
 - Run ```./secure-share``` to launch app
 
 # 4 User Manual
