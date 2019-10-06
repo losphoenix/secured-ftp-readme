@@ -14,6 +14,18 @@ Secured-Share is a secure end-to-end file sharing App based on Amazon AWS tech s
 - RSA key size: 2048 bit (2048-bit keys are sufficient until 2030)
 - RSA private key are encrypted by specific domain name stored.
 - Create separate AWS Cognito accounts for each user which provides additional security isolation.
+- Endpoint
+    - Cognito
+        - cognito-idp.us-east-2.amazonaws.com
+    - S3
+        - s3.us-east-2.amazonaws.com
+        - s3.us-east-1.amazonaws.com
+        - s3.dualstack.us-east-1.amazonaws.com
+        - account-id.s3-control.us-east-1.amazonaws.com
+        - account-id.s3-control.dualstack.us-east-1.amazonaws.com
+    - Reference
+        - Find account-id https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html
+        - AWS Endpoint https://docs.aws.amazon.com/general/latest/gr/rande.html
 
 # 3 Quick Setup
 
@@ -35,9 +47,8 @@ Note:
     - ```node SecureShareService.js```
     - If it shows some error like "cannot find module XXX", then run ```npm install node-windows@0.1.14 express@4.17.1 body-parser@1.19.0 aes256@1.0.4 node-rsa@1.0.5 fast-sha256@1.1.0 aws-sdk@2.477.0 amazon-cognito-identity-js@3.0.13 node-fetch@2.6.0 bluebird@3.5.3 forever-monitor@^1.7.1 forever@^1.0.0 axios@^0.19.0```
 - If you cannot access internet to download dependencies.
-    - Unzip dependencies-0921.zip
-    - Place the node_modules folder under ```{SECURE_SHARE_ROOT_PATH}\secure-share\resources\app```
-
+    - Unzip dependency-0921.tgz
+    - Place the node_modules folder under ```\secure-share-win32-x64\resources\app```
 ### 3.1 Linux Setup
 ####Environment Setup
 - Install Linux dependency ```yum install libXScrnSaver```
